@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 <a name="asyncOcrTablesJobIds"></a>
 # **asyncOcrTablesJobIds**
-> InlineResponse2001 asyncOcrTablesJobIds()
+> [InlineResponse2001] asyncOcrTablesJobIds()
 
 
 
@@ -48,7 +48,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**[InlineResponse2001]**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -65,7 +65,7 @@ This endpoint does not need any parameter.
 
 
 
-The Async OCR Table API allows customers to analyze multi-page documents containing tables and return structured representation of said tables in the form of a Json object  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**German**|`string`|`de-DE`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Italian**|`string`|`it-IT`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Google Cloud**|`google`| `DocumentAI v1 beta3`  |**Microsoft Azure**|`microsoft`| `rest API 3.0`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)` 
+The Async OCR Table API allows customers to analyze multi-page documents containing tables and return structured representation of said tables in the form of a Json object  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Italian**|`string`|`it-IT`| |**German**|`string`|`de-DE`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Google Cloud**|`google`| `DocumentAI v1 beta3`  |**Microsoft Azure**|`microsoft`| `rest API 3.0`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)` 
 
 ### Example
 ```javascript
@@ -185,7 +185,7 @@ Name | Type | Description  | Notes
 
 
 
-Optical Character Recognition or optical character reader (OCR) is the electronic or mechanical conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Swedish**|`string`|`sw-SW`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**Greek**|`string`|`gr-GR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**Japanese**|`string`|`ja-JP`| |**Polish**|`string`|`pl-PO`| |**Hungarian**|`string`|`hu-HU`| |**Arabic**|`string`|`ar-XA`| |**Finnish**|`string`|`fn-FN`| |**Czech**|`string`|`cz-CZ`| |**Korean**|`string`|`ko-KR`| |**Russian**|`string`|`ru-RU`| |**Danish**|`string`|`da-DK`| |**Chinese-Simplified**|`string`|`zh-CN`| |**French**|`string`|`fr-FR`| |**Turkish**|`string`|`tr-TR`| |**Chinese-Traditional**|`string`|`zh-TW`| |**German**|`string`|`de-DE`| |**Spanish**|`string`|`es-ES`| |**English (US)**|`string`|`en-US`| |**Italian**|`string`|`it-IT`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Google Cloud**|`google`| `v1`  |**Microsoft Azure**|`microsoft`| `v3.2`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**Tesseract**|`tesseract`| `latest` 
+Optical Character Recognition or optical character reader (OCR) is the electronic or mechanical conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Czech**|`string`|`cz-CZ`| |**German**|`string`|`de-DE`| |**Greek**|`string`|`gr-GR`| |**Korean**|`string`|`ko-KR`| |**Finnish**|`string`|`fn-FN`| |**Polish**|`string`|`pl-PO`| |**Turkish**|`string`|`tr-TR`| |**Russian**|`string`|`ru-RU`| |**Italian**|`string`|`it-IT`| |**Japanese**|`string`|`ja-JP`| |**Arabic**|`string`|`ar-XA`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**Spanish**|`string`|`es-ES`| |**Danish**|`string`|`da-DK`| |**English (US)**|`string`|`en-US`| |**Hungarian**|`string`|`hu-HU`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**Swedish**|`string`|`sw-SW`| |**Chinese-Traditional**|`string`|`zh-TW`| |**French**|`string`|`fr-FR`| |**Chinese-Simplified**|`string`|`zh-CN`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Google Cloud**|`google`| `v1`  |**Microsoft Azure**|`microsoft`| `v3.2`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**Tesseract**|`tesseract`| `latest` 
 
 ### Example
 ```javascript
@@ -244,7 +244,7 @@ Name | Type | Description  | Notes
 
 
 
-The OCR Invoice API enables customers to take invoices in a variety of formats and return structured data to automate the invoice processing.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**German**|`string`|`de-DE`| |**Danish**|`string`|`da-DK`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Italian**|`string`|`it-IT`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Mindee**|`mindee`| `v2`  |**Dataleon**|`dataleon`| `v3.1.0` 
+The OCR Invoice API enables customers to take invoices in a variety of formats and return structured data to automate the invoice processing.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**German**|`string`|`de-DE`| |**Italian**|`string`|`it-IT`| |**French**|`string`|`fr-FR`| |**Danish**|`string`|`da-DK`| |**Spanish**|`string`|`es-ES`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Mindee**|`mindee`| `v2`  |**Dataleon**|`dataleon`| `v3.1.0` 
 
 ### Example
 ```javascript
@@ -303,7 +303,7 @@ Name | Type | Description  | Notes
 
 
 
-The OCR Table API allows customers to analyze documents containing tables and return structured representation of said tables in the form of a Json object  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**German**|`string`|`de-DE`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Italian**|`string`|`it-IT`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Google Cloud**|`google`| `DocumentAI v1 beta3`  |**Microsoft Azure**|`microsoft`| `rest API 3.0`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)` 
+The OCR Table API allows customers to analyze documents containing tables and return structured representation of said tables in the form of a Json object  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Italian**|`string`|`it-IT`| |**German**|`string`|`de-DE`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Google Cloud**|`google`| `DocumentAI v1 beta3`  |**Microsoft Azure**|`microsoft`| `rest API 3.0`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)` 
 
 ### Example
 ```javascript

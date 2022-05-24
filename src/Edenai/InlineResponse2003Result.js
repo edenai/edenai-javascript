@@ -17,55 +17,61 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'Edenai/InlineResponse2003Result'], factory);
+    define(['ApiClient'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./InlineResponse2003Result'));
+    module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
     if (!root.Edenai) {
       root.Edenai = {};
     }
-    root.Edenai.InlineResponse2003 = factory(root.Edenai.ApiClient, root.Edenai.InlineResponse2003Result);
+    root.Edenai.InlineResponse2003Result = factory(root.Edenai.ApiClient);
   }
-}(this, function(ApiClient, InlineResponse2003Result) {
+}(this, function(ApiClient) {
   'use strict';
 
   /**
-   * The InlineResponse2003 model module.
-   * @module Edenai/InlineResponse2003
+   * The InlineResponse2003Result model module.
+   * @module Edenai/InlineResponse2003Result
    * @version v1
    */
 
   /**
-   * Constructs a new <code>InlineResponse2003</code>.
-   * launch async speech to text job
-   * @alias module:Edenai/InlineResponse2003
+   * Constructs a new <code>InlineResponse2003Result</code>.
+   * @alias module:Edenai/InlineResponse2003Result
    * @class
    */
   var exports = function() {
   };
 
   /**
-   * Constructs a <code>InlineResponse2003</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>InlineResponse2003Result</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:Edenai/InlineResponse2003} obj Optional instance to populate.
-   * @return {module:Edenai/InlineResponse2003} The populated <code>InlineResponse2003</code> instance.
+   * @param {module:Edenai/InlineResponse2003Result} obj Optional instance to populate.
+   * @return {module:Edenai/InlineResponse2003Result} The populated <code>InlineResponse2003Result</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('result'))
-        obj.result = InlineResponse2003Result.constructFromObject(data['result']);
+      if (data.hasOwnProperty('job_id'))
+        obj.jobId = ApiClient.convertToType(data['job_id'], 'String');
+      if (data.hasOwnProperty('status'))
+        obj.status = ApiClient.convertToType(data['status'], 'String');
     }
     return obj;
   }
 
   /**
-   * @member {module:Edenai/InlineResponse2003Result} result
+   * @member {String} jobId
    */
-  exports.prototype.result = undefined;
+  exports.prototype.jobId = undefined;
+
+  /**
+   * @member {String} status
+   */
+  exports.prototype.status = undefined;
 
 
   return exports;

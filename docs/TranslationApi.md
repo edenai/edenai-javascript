@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 
 
-Machine translation refers to the translation of a text into another language using rules, statics or ml technics.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Russian**|`string`|`ru-RU`| |**German**|`string`|`de-DE`| |**Malay**|`string`|`ms-MY`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**English (GB)**|`string`|`en-GB`| |**Arabic (Saudi Arabia)**|`string`|`ar-SA`| |**Portuguese (Brazil)**|`string`|`pt-BR`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Japanese**|`string`|`ja-JP`| |**Turkish**|`string`|`tr-TR`| |**Italian**|`string`|`it-IT`| |**Korean**|`string`|`ko-KR`| |**Indonesian**|`string`|`id-ID`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Microsoft Azure**|`microsoft`| `v3.0`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**Google Cloud**|`google`| `v3` 
+Machine translation refers to the translation of a text into another language using rules, statics or ml technics.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Italian**|`string`|`it-IT`| |**German**|`string`|`de-DE`| |**English (GB)**|`string`|`en-GB`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**Japanese**|`string`|`ja-JP`| |**Arabic (Saudi Arabia)**|`string`|`ar-SA`| |**French**|`string`|`fr-FR`| |**Korean**|`string`|`ko-KR`| |**Turkish**|`string`|`tr-TR`| |**Spanish**|`string`|`es-ES`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**Indonesian**|`string`|`id-ID`| |**English (US)**|`string`|`en-US`| |**Russian**|`string`|`ru-RU`| |**Portuguese (Brazil)**|`string`|`pt-BR`| |**Malay**|`string`|`ms-MY`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Microsoft Azure**|`microsoft`| `v3.0`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**Google Cloud**|`google`| `v3` 
 
 ### Example
 ```javascript
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/x-www-form-urlencoded
+ - **Content-Type**: application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
 <a name="languageDetection"></a>
@@ -123,6 +123,6 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/x-www-form-urlencoded
+ - **Content-Type**: application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
