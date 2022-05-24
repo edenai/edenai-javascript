@@ -1,4 +1,4 @@
-# EdenAiApiDocumentation.AutoMLTextDataApi
+# Edenai.AutoMLTextDataApi
 
 All URIs are relative to *https://api.edenai.run/v1*
 
@@ -27,8 +27,8 @@ AutoML Text Data Delete
 
 ### Example
 ```javascript
-var EdenAiApiDocumentation = require('eden_ai_api_documentation');
-var defaultClient = EdenAiApiDocumentation.ApiClient.instance;
+var Edenai = require('Edenai');
+var defaultClient = Edenai.ApiClient.instance;
 
 // Configure API key authorization: Bearer
 var Bearer = defaultClient.authentications['Bearer'];
@@ -36,7 +36,7 @@ Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new EdenAiApiDocumentation.AutoMLTextDataApi();
+var apiInstance = new Edenai.AutoMLTextDataApi();
 
 var projectId = "projectId_example"; // String | 
 
@@ -83,8 +83,8 @@ null (empty response body)
 
 ### Example
 ```javascript
-var EdenAiApiDocumentation = require('eden_ai_api_documentation');
-var defaultClient = EdenAiApiDocumentation.ApiClient.instance;
+var Edenai = require('Edenai');
+var defaultClient = Edenai.ApiClient.instance;
 
 // Configure API key authorization: Bearer
 var Bearer = defaultClient.authentications['Bearer'];
@@ -92,7 +92,7 @@ Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new EdenAiApiDocumentation.AutoMLTextDataApi();
+var apiInstance = new Edenai.AutoMLTextDataApi();
 
 var projectId = "projectId_example"; // String | 
 
@@ -142,8 +142,8 @@ null (empty response body)
 
 ### Example
 ```javascript
-var EdenAiApiDocumentation = require('eden_ai_api_documentation');
-var defaultClient = EdenAiApiDocumentation.ApiClient.instance;
+var Edenai = require('Edenai');
+var defaultClient = Edenai.ApiClient.instance;
 
 // Configure API key authorization: Bearer
 var Bearer = defaultClient.authentications['Bearer'];
@@ -151,7 +151,7 @@ Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new EdenAiApiDocumentation.AutoMLTextDataApi();
+var apiInstance = new Edenai.AutoMLTextDataApi();
 
 var predictId = "predictId_example"; // String | 
 
@@ -201,8 +201,8 @@ null (empty response body)
 
 ### Example
 ```javascript
-var EdenAiApiDocumentation = require('eden_ai_api_documentation');
-var defaultClient = EdenAiApiDocumentation.ApiClient.instance;
+var Edenai = require('Edenai');
+var defaultClient = Edenai.ApiClient.instance;
 
 // Configure API key authorization: Bearer
 var Bearer = defaultClient.authentications['Bearer'];
@@ -210,7 +210,7 @@ Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new EdenAiApiDocumentation.AutoMLTextDataApi();
+var apiInstance = new Edenai.AutoMLTextDataApi();
 
 var predictId = "predictId_example"; // String | 
 
@@ -260,8 +260,8 @@ null (empty response body)
 
 ### Example
 ```javascript
-var EdenAiApiDocumentation = require('eden_ai_api_documentation');
-var defaultClient = EdenAiApiDocumentation.ApiClient.instance;
+var Edenai = require('Edenai');
+var defaultClient = Edenai.ApiClient.instance;
 
 // Configure API key authorization: Bearer
 var Bearer = defaultClient.authentications['Bearer'];
@@ -269,7 +269,7 @@ Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new EdenAiApiDocumentation.AutoMLTextDataApi();
+var apiInstance = new Edenai.AutoMLTextDataApi();
 
 var projectId = "projectId_example"; // String | 
 
@@ -319,8 +319,8 @@ AutoML Text Data Train Detail
 
 ### Example
 ```javascript
-var EdenAiApiDocumentation = require('eden_ai_api_documentation');
-var defaultClient = EdenAiApiDocumentation.ApiClient.instance;
+var Edenai = require('Edenai');
+var defaultClient = Edenai.ApiClient.instance;
 
 // Configure API key authorization: Bearer
 var Bearer = defaultClient.authentications['Bearer'];
@@ -328,7 +328,7 @@ Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new EdenAiApiDocumentation.AutoMLTextDataApi();
+var apiInstance = new Edenai.AutoMLTextDataApi();
 
 var projectId = "projectId_example"; // String | 
 
@@ -375,8 +375,8 @@ null (empty response body)
 
 ### Example
 ```javascript
-var EdenAiApiDocumentation = require('eden_ai_api_documentation');
-var defaultClient = EdenAiApiDocumentation.ApiClient.instance;
+var Edenai = require('Edenai');
+var defaultClient = Edenai.ApiClient.instance;
 
 // Configure API key authorization: Bearer
 var Bearer = defaultClient.authentications['Bearer'];
@@ -384,7 +384,7 @@ Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new EdenAiApiDocumentation.AutoMLTextDataApi();
+var apiInstance = new Edenai.AutoMLTextDataApi();
 
 var projectName = "projectName_example"; // String | 
 
@@ -440,8 +440,8 @@ AutoML Text Project Delete
 
 ### Example
 ```javascript
-var EdenAiApiDocumentation = require('eden_ai_api_documentation');
-var defaultClient = EdenAiApiDocumentation.ApiClient.instance;
+var Edenai = require('Edenai');
+var defaultClient = Edenai.ApiClient.instance;
 
 // Configure API key authorization: Bearer
 var Bearer = defaultClient.authentications['Bearer'];
@@ -449,7 +449,7 @@ Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new EdenAiApiDocumentation.AutoMLTextDataApi();
+var apiInstance = new Edenai.AutoMLTextDataApi();
 
 var projectId = "projectId_example"; // String | 
 
@@ -493,8 +493,8 @@ AutoML Text Project Detail
 
 ### Example
 ```javascript
-var EdenAiApiDocumentation = require('eden_ai_api_documentation');
-var defaultClient = EdenAiApiDocumentation.ApiClient.instance;
+var Edenai = require('Edenai');
+var defaultClient = Edenai.ApiClient.instance;
 
 // Configure API key authorization: Bearer
 var Bearer = defaultClient.authentications['Bearer'];
@@ -502,7 +502,7 @@ Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new EdenAiApiDocumentation.AutoMLTextDataApi();
+var apiInstance = new Edenai.AutoMLTextDataApi();
 
 var projectId = "projectId_example"; // String | 
 
@@ -546,8 +546,8 @@ AutoML Text Project List
 
 ### Example
 ```javascript
-var EdenAiApiDocumentation = require('eden_ai_api_documentation');
-var defaultClient = EdenAiApiDocumentation.ApiClient.instance;
+var Edenai = require('Edenai');
+var defaultClient = Edenai.ApiClient.instance;
 
 // Configure API key authorization: Bearer
 var Bearer = defaultClient.authentications['Bearer'];
@@ -555,7 +555,7 @@ Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new EdenAiApiDocumentation.AutoMLTextDataApi();
+var apiInstance = new Edenai.AutoMLTextDataApi();
 
 var callback = function(error, data, response) {
   if (error) {
@@ -593,8 +593,8 @@ AutoML Text Project Update
 
 ### Example
 ```javascript
-var EdenAiApiDocumentation = require('eden_ai_api_documentation');
-var defaultClient = EdenAiApiDocumentation.ApiClient.instance;
+var Edenai = require('Edenai');
+var defaultClient = Edenai.ApiClient.instance;
 
 // Configure API key authorization: Bearer
 var Bearer = defaultClient.authentications['Bearer'];
@@ -602,7 +602,7 @@ Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new EdenAiApiDocumentation.AutoMLTextDataApi();
+var apiInstance = new Edenai.AutoMLTextDataApi();
 
 var projectId = "projectId_example"; // String | 
 

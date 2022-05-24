@@ -1,4 +1,4 @@
-# EdenAiApiDocumentation.EdenAIToolsApi
+# Edenai.EdenAIToolsApi
 
 All URIs are relative to *https://api.edenai.run/v1*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="search"></a>
 # **search**
-> InlineResponse20014 search(text, words)
+> InlineResponse20019 search(text, words)
 
 
 
@@ -17,8 +17,8 @@ This is an easy tool to lookup for a list of words in a given text
 
 ### Example
 ```javascript
-var EdenAiApiDocumentation = require('eden_ai_api_documentation');
-var defaultClient = EdenAiApiDocumentation.ApiClient.instance;
+var Edenai = require('Edenai');
+var defaultClient = Edenai.ApiClient.instance;
 
 // Configure API key authorization: Bearer
 var Bearer = defaultClient.authentications['Bearer'];
@@ -26,7 +26,7 @@ Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new EdenAiApiDocumentation.EdenAIToolsApi();
+var apiInstance = new Edenai.EdenAIToolsApi();
 
 var text = "text_example"; // String | Text to analyze
 
@@ -52,7 +52,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20014**](InlineResponse20014.md)
+[**InlineResponse20019**](InlineResponse20019.md)
 
 ### Authorization
 
@@ -60,6 +60,6 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/x-www-form-urlencoded
+ - **Content-Type**: application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 

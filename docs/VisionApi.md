@@ -1,4 +1,4 @@
-# EdenAiApiDocumentation.VisionApi
+# Edenai.VisionApi
 
 All URIs are relative to *https://api.edenai.run/v1*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 <a name="explicitContentDetection"></a>
 # **explicitContentDetection**
-> InlineResponse20011 explicitContentDetection(files, providers)
+> InlineResponse20016 explicitContentDetection(files, providers)
 
 
 
@@ -19,8 +19,8 @@ Explicit Content Detection detects adult only content in videos, who is generall
 
 ### Example
 ```javascript
-var EdenAiApiDocumentation = require('eden_ai_api_documentation');
-var defaultClient = EdenAiApiDocumentation.ApiClient.instance;
+var Edenai = require('Edenai');
+var defaultClient = Edenai.ApiClient.instance;
 
 // Configure API key authorization: Bearer
 var Bearer = defaultClient.authentications['Bearer'];
@@ -28,7 +28,7 @@ Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new EdenAiApiDocumentation.VisionApi();
+var apiInstance = new Edenai.VisionApi();
 
 var files = "/path/to/file.txt"; // File | File Image to analyse (ex: pdf, jpg, jpeg, png, tiff)
 
@@ -54,7 +54,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20011**](InlineResponse20011.md)
+[**InlineResponse20016**](InlineResponse20016.md)
 
 ### Authorization
 
@@ -67,16 +67,16 @@ Name | Type | Description  | Notes
 
 <a name="faceDetection"></a>
 # **faceDetection**
-> InlineResponse20012 faceDetection(files, providers)
+> InlineResponse20017 faceDetection(files, providers)
 
 
 
-Face Detection is a computer technology being used in a variety of applicationsthat identifies human faces in digital images.  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Google Cloud**|`google`| `v1` 
+Face Detection is a computer technology being used in a variety of applicationsthat identifies human faces in digital images.  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Microsoft Azure**|`microsoft`| `v3.2`  |**Google Cloud**|`google`| `v1` 
 
 ### Example
 ```javascript
-var EdenAiApiDocumentation = require('eden_ai_api_documentation');
-var defaultClient = EdenAiApiDocumentation.ApiClient.instance;
+var Edenai = require('Edenai');
+var defaultClient = Edenai.ApiClient.instance;
 
 // Configure API key authorization: Bearer
 var Bearer = defaultClient.authentications['Bearer'];
@@ -84,7 +84,7 @@ Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new EdenAiApiDocumentation.VisionApi();
+var apiInstance = new Edenai.VisionApi();
 
 var files = "/path/to/file.txt"; // File | File Image to analyse (ex: pdf, jpg, jpeg, png, tiff)
 
@@ -110,7 +110,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20012**](InlineResponse20012.md)
+[**InlineResponse20017**](InlineResponse20017.md)
 
 ### Authorization
 
@@ -123,7 +123,7 @@ Name | Type | Description  | Notes
 
 <a name="objectDetection"></a>
 # **objectDetection**
-> InlineResponse20013 objectDetection(files, providers)
+> InlineResponse20018 objectDetection(files, providers)
 
 
 
@@ -131,8 +131,8 @@ Object Detection is a computer vision technique that allows us to identify and l
 
 ### Example
 ```javascript
-var EdenAiApiDocumentation = require('eden_ai_api_documentation');
-var defaultClient = EdenAiApiDocumentation.ApiClient.instance;
+var Edenai = require('Edenai');
+var defaultClient = Edenai.ApiClient.instance;
 
 // Configure API key authorization: Bearer
 var Bearer = defaultClient.authentications['Bearer'];
@@ -140,7 +140,7 @@ Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new EdenAiApiDocumentation.VisionApi();
+var apiInstance = new Edenai.VisionApi();
 
 var files = "/path/to/file.txt"; // File | File Image to analyse (ex: pdf, jpg, jpeg, png, tiff)
 
@@ -166,7 +166,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20013**](InlineResponse20013.md)
+[**InlineResponse20018**](InlineResponse20018.md)
 
 ### Authorization
 
