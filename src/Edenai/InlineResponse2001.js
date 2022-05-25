@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'Edenai/InlineResponse2001Result1'], factory);
+    define(['ApiClient'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./InlineResponse2001Result1'));
+    module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
     if (!root.Edenai) {
       root.Edenai = {};
     }
-    root.Edenai.InlineResponse2001 = factory(root.Edenai.ApiClient, root.Edenai.InlineResponse2001Result1);
+    root.Edenai.InlineResponse2001 = factory(root.Edenai.ApiClient);
   }
-}(this, function(ApiClient, InlineResponse2001Result1) {
+}(this, function(ApiClient) {
   'use strict';
 
   /**
@@ -39,7 +39,6 @@
 
   /**
    * Constructs a new <code>InlineResponse2001</code>.
-   * get ocr tables jobs ids response
    * @alias module:Edenai/InlineResponse2001
    * @class
    */
@@ -56,16 +55,30 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('result'))
-        obj.result = ApiClient.convertToType(data['result'], [InlineResponse2001Result1]);
+      if (data.hasOwnProperty('job_id'))
+        obj.jobId = ApiClient.convertToType(data['job_id'], 'String');
+      if (data.hasOwnProperty('status'))
+        obj.status = ApiClient.convertToType(data['status'], 'String');
+      if (data.hasOwnProperty('created'))
+        obj.created = ApiClient.convertToType(data['created'], 'String');
     }
     return obj;
   }
 
   /**
-   * @member {Array.<module:Edenai/InlineResponse2001Result1>} result
+   * @member {String} jobId
    */
-  exports.prototype.result = undefined;
+  exports.prototype.jobId = undefined;
+
+  /**
+   * @member {String} status
+   */
+  exports.prototype.status = undefined;
+
+  /**
+   * @member {String} created
+   */
+  exports.prototype.created = undefined;
 
 
   return exports;

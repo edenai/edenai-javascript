@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'Edenai/InlineResponse204Result1'], factory);
+    define(['ApiClient'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./InlineResponse204Result1'));
+    module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
     if (!root.Edenai) {
       root.Edenai = {};
     }
-    root.Edenai.InlineResponse204 = factory(root.Edenai.ApiClient, root.Edenai.InlineResponse204Result1);
+    root.Edenai.InlineResponse204 = factory(root.Edenai.ApiClient);
   }
-}(this, function(ApiClient, InlineResponse204Result1) {
+}(this, function(ApiClient) {
   'use strict';
 
   /**
@@ -56,16 +56,23 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('result'))
-        obj.result = ApiClient.convertToType(data['result'], [InlineResponse204Result1]);
+      if (data.hasOwnProperty('job_id'))
+        obj.jobId = ApiClient.convertToType(data['job_id'], 'String');
+      if (data.hasOwnProperty('status'))
+        obj.status = ApiClient.convertToType(data['status'], 'String');
     }
     return obj;
   }
 
   /**
-   * @member {Array.<module:Edenai/InlineResponse204Result1>} result
+   * @member {String} jobId
    */
-  exports.prototype.result = undefined;
+  exports.prototype.jobId = undefined;
+
+  /**
+   * @member {String} status
+   */
+  exports.prototype.status = undefined;
 
 
   return exports;

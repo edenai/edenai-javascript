@@ -52,14 +52,14 @@
      * Callback function to receive the result of the asyncOcrTablesJobIds operation.
      * @callback module:Edenai/OCRApi~asyncOcrTablesJobIdsCallback
      * @param {String} error Error message, if any.
-     * @param {module:Edenai/InlineResponse2001} data The data returned by the service call.
+     * @param {Array.<module:Edenai/InlineResponse2001>} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Get all past jobs ids
      * @param {module:Edenai/OCRApi~asyncOcrTablesJobIdsCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:Edenai/InlineResponse2001}
+     * data is of type: {@link Array.<module:Edenai/InlineResponse2001>}
      */
     this.asyncOcrTablesJobIds = function(callback) {
       var postBody = null;
@@ -79,7 +79,7 @@
       var authNames = ['Bearer'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = InlineResponse2001;
+      var returnType = [InlineResponse2001];
 
       return this.apiClient.callApi(
         '/pretrained/async/ocr/tables/get_jobs', 'GET',
@@ -97,7 +97,7 @@
      */
 
     /**
-     * The Async OCR Table API allows customers to analyze multi-page documents containing tables and return structured representation of said tables in the form of a Json object  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**German**|`string`|`de-DE`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Italian**|`string`|`it-IT`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Google Cloud**|`google`| `DocumentAI v1 beta3`  |**Microsoft Azure**|`microsoft`| `rest API 3.0`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)` 
+     * The Async OCR Table API allows customers to analyze multi-page documents containing tables and return structured representation of said tables in the form of a Json object  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Italian**|`string`|`it-IT`| |**German**|`string`|`de-DE`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Google Cloud**|`google`| `DocumentAI v1 beta3`  |**Microsoft Azure**|`microsoft`| `rest API 3.0`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)` 
      * @param {String} language Language code expected (ex: fr-FR (French), en-US (English), es-ES (Spanish), nl-NL Dutch (Netherlands))
      * @param {File} files File to analyse
      * @param {String} providers Provider to compare (ex: [ 'amazon', 'google'])
@@ -213,7 +213,7 @@
      */
 
     /**
-     * Optical Character Recognition or optical character reader (OCR) is the electronic or mechanical conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Swedish**|`string`|`sw-SW`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**Greek**|`string`|`gr-GR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**Japanese**|`string`|`ja-JP`| |**Polish**|`string`|`pl-PO`| |**Hungarian**|`string`|`hu-HU`| |**Arabic**|`string`|`ar-XA`| |**Finnish**|`string`|`fn-FN`| |**Czech**|`string`|`cz-CZ`| |**Korean**|`string`|`ko-KR`| |**Russian**|`string`|`ru-RU`| |**Danish**|`string`|`da-DK`| |**Chinese-Simplified**|`string`|`zh-CN`| |**French**|`string`|`fr-FR`| |**Turkish**|`string`|`tr-TR`| |**Chinese-Traditional**|`string`|`zh-TW`| |**German**|`string`|`de-DE`| |**Spanish**|`string`|`es-ES`| |**English (US)**|`string`|`en-US`| |**Italian**|`string`|`it-IT`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Google Cloud**|`google`| `v1`  |**Microsoft Azure**|`microsoft`| `v3.2`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**Tesseract**|`tesseract`| `latest` 
+     * Optical Character Recognition or optical character reader (OCR) is the electronic or mechanical conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Czech**|`string`|`cz-CZ`| |**German**|`string`|`de-DE`| |**Greek**|`string`|`gr-GR`| |**Korean**|`string`|`ko-KR`| |**Finnish**|`string`|`fn-FN`| |**Polish**|`string`|`pl-PO`| |**Turkish**|`string`|`tr-TR`| |**Russian**|`string`|`ru-RU`| |**Italian**|`string`|`it-IT`| |**Japanese**|`string`|`ja-JP`| |**Arabic**|`string`|`ar-XA`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**Spanish**|`string`|`es-ES`| |**Danish**|`string`|`da-DK`| |**English (US)**|`string`|`en-US`| |**Hungarian**|`string`|`hu-HU`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**Swedish**|`string`|`sw-SW`| |**Chinese-Traditional**|`string`|`zh-TW`| |**French**|`string`|`fr-FR`| |**Chinese-Simplified**|`string`|`zh-CN`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Google Cloud**|`google`| `v1`  |**Microsoft Azure**|`microsoft`| `v3.2`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**Tesseract**|`tesseract`| `latest` 
      * @param {File} files File to analyse (ex: pdf, jpg, jpeg, png, tiff)
      * @param {String} providers Providers to compare (ex: [ 'amazon', 'microsoft', 'ibm', 'google'])
      * @param {String} language Language code expected (ex: fr-FR)
@@ -274,7 +274,7 @@
      */
 
     /**
-     * The OCR Invoice API enables customers to take invoices in a variety of formats and return structured data to automate the invoice processing.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**German**|`string`|`de-DE`| |**Danish**|`string`|`da-DK`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Italian**|`string`|`it-IT`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Mindee**|`mindee`| `v2`  |**Dataleon**|`dataleon`| `v3.1.0` 
+     * The OCR Invoice API enables customers to take invoices in a variety of formats and return structured data to automate the invoice processing.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**German**|`string`|`de-DE`| |**Italian**|`string`|`it-IT`| |**French**|`string`|`fr-FR`| |**Danish**|`string`|`da-DK`| |**Spanish**|`string`|`es-ES`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Mindee**|`mindee`| `v2`  |**Dataleon**|`dataleon`| `v3.1.0` 
      * @param {File} files File Image to analyse (ex: pdf, jpg, jpeg, png)
      * @param {String} providers Provider to compare (ex: [ 'mindee', 'microsoft'])
      * @param {String} language Language code of invoice (ex: fr-FR (French), en-US (English), es-ES (Spanish))
@@ -335,7 +335,7 @@
      */
 
     /**
-     * The OCR Table API allows customers to analyze documents containing tables and return structured representation of said tables in the form of a Json object  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**German**|`string`|`de-DE`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Italian**|`string`|`it-IT`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Google Cloud**|`google`| `DocumentAI v1 beta3`  |**Microsoft Azure**|`microsoft`| `rest API 3.0`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)` 
+     * The OCR Table API allows customers to analyze documents containing tables and return structured representation of said tables in the form of a Json object  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Italian**|`string`|`it-IT`| |**German**|`string`|`de-DE`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Google Cloud**|`google`| `DocumentAI v1 beta3`  |**Microsoft Azure**|`microsoft`| `rest API 3.0`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)` 
      * @param {File} files File to analyse (ex: pdf, jpg, jpeg, png, tiff)
      * @param {String} providers Providers to compare (ex: [ 'amazon', 'microsoft', 'google'])
      * @param {String} language Language code expected (ex: fr-FR)

@@ -16,7 +16,7 @@ Method | HTTP request | Description
 
 
 
-Speech recognition is technology that can recognize spoken words, which can then be converted to text. This endpoint allows you to launch asynchronous speech recognition jobs.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Russian**|`string`|`ru-RU`| |**German**|`string`|`de-DE`| |**Malay**|`string`|`ms-MY`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**English (GB)**|`string`|`en-GB`| |**Arabic (Saudi Arabia)**|`string`|`ar-SA`| |**Portuguese (Brazil)**|`string`|`pt-BR`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Japanese**|`string`|`ja-JP`| |**Turkish**|`string`|`tr-TR`| |**Italian**|`string`|`it-IT`| |**Korean**|`string`|`ko-KR`| |**Indonesian**|`string`|`id-ID`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**Deepgram**|`deepgram`| `v1`  |**IBM Watson**|`ibm`| `v1`  |**Speechmatics**|`speechmatics`| `2.7.0`  |**Microsoft Azure**|`microsoft`| `v1.0`  |**Google Cloud**|`google`| `v1p1beta1` 
+Speech recognition is technology that can recognize spoken words, which can then be converted to text. This endpoint allows you to launch asynchronous speech recognition jobs.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Italian**|`string`|`it-IT`| |**German**|`string`|`de-DE`| |**English (GB)**|`string`|`en-GB`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**Japanese**|`string`|`ja-JP`| |**Arabic (Saudi Arabia)**|`string`|`ar-SA`| |**French**|`string`|`fr-FR`| |**Korean**|`string`|`ko-KR`| |**Turkish**|`string`|`tr-TR`| |**Spanish**|`string`|`es-ES`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**Indonesian**|`string`|`id-ID`| |**English (US)**|`string`|`en-US`| |**Russian**|`string`|`ru-RU`| |**Portuguese (Brazil)**|`string`|`pt-BR`| |**Malay**|`string`|`ms-MY`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**Deepgram**|`deepgram`| `v1`  |**IBM Watson**|`ibm`| `v1`  |**Speechmatics**|`speechmatics`| `2.7.0`  |**Microsoft Azure**|`microsoft`| `v1.0`  |**Google Cloud**|`google`| `v1p1beta1` 
 
 ### Example
 ```javascript
@@ -136,7 +136,7 @@ Name | Type | Description  | Notes
 
 
 
-Speech recognition is technology that can recognize spoken words, which can then be converted to text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Russian**|`string`|`ru-RU`| |**German**|`string`|`de-DE`| |**Malay**|`string`|`ms-MY`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**English (GB)**|`string`|`en-GB`| |**Arabic (Saudi Arabia)**|`string`|`ar-SA`| |**Portuguese (Brazil)**|`string`|`pt-BR`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Japanese**|`string`|`ja-JP`| |**Turkish**|`string`|`tr-TR`| |**Italian**|`string`|`it-IT`| |**Korean**|`string`|`ko-KR`| |**Indonesian**|`string`|`id-ID`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**Deepgram**|`deepgram`| `v1`  |**IBM Watson**|`ibm`| `v1`  |**Speechmatics**|`speechmatics`| `2.7.0`  |**Microsoft Azure**|`microsoft`| `v1.0`  |**Google Cloud**|`google`| `v1p1beta1` 
+Speech recognition is technology that can recognize spoken words, which can then be converted to text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Italian**|`string`|`it-IT`| |**German**|`string`|`de-DE`| |**English (GB)**|`string`|`en-GB`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**Japanese**|`string`|`ja-JP`| |**Arabic (Saudi Arabia)**|`string`|`ar-SA`| |**French**|`string`|`fr-FR`| |**Korean**|`string`|`ko-KR`| |**Turkish**|`string`|`tr-TR`| |**Spanish**|`string`|`es-ES`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**Indonesian**|`string`|`id-ID`| |**English (US)**|`string`|`en-US`| |**Russian**|`string`|`ru-RU`| |**Portuguese (Brazil)**|`string`|`pt-BR`| |**Malay**|`string`|`ms-MY`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**Deepgram**|`deepgram`| `v1`  |**IBM Watson**|`ibm`| `v1`  |**Speechmatics**|`speechmatics`| `2.7.0`  |**Microsoft Azure**|`microsoft`| `v1.0`  |**Google Cloud**|`google`| `v1p1beta1` 
 
 ### Example
 ```javascript
@@ -199,7 +199,7 @@ Name | Type | Description  | Notes
 
 
 
-Text-to-speech (TTS) system converts normal language text into speech.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**German**|`string`|`de-DE`| |**Russian**|`string`|`ru-RU`| |**Danish**|`string`|`da-DK`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**English (GB)**|`string`|`en-GB`| |**Portuguese (Brazil)**|`string`|`pt-BR`| |**Spanish**|`string`|`es-ES`| |**Arabic**|`string`|`ar-XA`| |**French**|`string`|`fr-FR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Chinese**|`string`|`cmn-CN`| |**Japanese**|`string`|`ja-JP`| |**Italian**|`string`|`it-IT`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Microsoft Azure**|`microsoft`| `v1.0`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**Google Cloud**|`google`| `v1` 
+Text-to-speech (TTS) system converts normal language text into speech.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**German**|`string`|`de-DE`| |**Italian**|`string`|`it-IT`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**English (GB)**|`string`|`en-GB`| |**Japanese**|`string`|`ja-JP`| |**Chinese**|`string`|`cmn-CN`| |**French**|`string`|`fr-FR`| |**Danish**|`string`|`da-DK`| |**Arabic**|`string`|`ar-XA`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**Spanish**|`string`|`es-ES`| |**English (US)**|`string`|`en-US`| |**Russian**|`string`|`ru-RU`| |**Portuguese (Brazil)**|`string`|`pt-BR`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Microsoft Azure**|`microsoft`| `v1.0`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**Google Cloud**|`google`| `v1` 
 
 ### Example
 ```javascript
@@ -252,6 +252,6 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/x-www-form-urlencoded
+ - **Content-Type**: multipart/form-data
  - **Accept**: application/json
 

@@ -19,7 +19,7 @@ Method | HTTP request | Description
 
 
 
-Keyword extraction (also known as keyword detection or keyword analysis) is a text analysis technique that consists of automatically extracting the mostimportant words and expressions in a text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Swedish**|`string`|`sw-SW`| |**German**|`string`|`de-DE`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Finnish**|`string`|`fn-FN`| |**Italian**|`string`|`it-IT`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Microsoft Azure**|`microsoft`| `v3.1`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**IBM Watson**|`ibm`| `v1 (2021-08-01)`  |**Lettria**|`lettria`| `v5.5.2` 
+Keyword extraction (also known as keyword detection or keyword analysis) is a text analysis technique that consists of automatically extracting the mostimportant words and expressions in a text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Italian**|`string`|`it-IT`| |**German**|`string`|`de-DE`| |**Swedish**|`string`|`sw-SW`| |**French**|`string`|`fr-FR`| |**Finnish**|`string`|`fn-FN`| |**Spanish**|`string`|`es-ES`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Microsoft Azure**|`microsoft`| `v3.1`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**IBM Watson**|`ibm`| `v1 (2021-08-01)`  |**Lettria**|`lettria`| `v5.5.2` 
 
 ### Example
 ```javascript
@@ -78,7 +78,7 @@ Name | Type | Description  | Notes
 
 
 
-Named Entity Recognition (also called entity identification or entity extraction) is an information extraction technique that automatically identifies named entities in a text and classifies them into predefined categories.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Chinese-Traditional**|`string`|`zh-TW`| |**Swedish**|`string`|`sw-SW`| |**German**|`string`|`de-DE`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Chinese-Simplified**|`string`|`zh-CN`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Japanese**|`string`|`ja-JP`| |**Finnish**|`string`|`fn-FN`| |**Arabic**|`string`|`ar-XA`| |**Italian**|`string`|`it-IT`| |**Korean**|`string`|`ko-KR`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**IBM Watson**|`ibm`| `v1 (2021-08-01)`  |**Google Cloud**|`google`| `v1`  |**Lettria**|`lettria`| `v5.5.2` 
+Named Entity Recognition (also called entity identification or entity extraction) is an information extraction technique that automatically identifies named entities in a text and classifies them into predefined categories.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Italian**|`string`|`it-IT`| |**German**|`string`|`de-DE`| |**Swedish**|`string`|`sw-SW`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**Japanese**|`string`|`ja-JP`| |**Chinese-Traditional**|`string`|`zh-TW`| |**French**|`string`|`fr-FR`| |**Korean**|`string`|`ko-KR`| |**Finnish**|`string`|`fn-FN`| |**Arabic**|`string`|`ar-XA`| |**Spanish**|`string`|`es-ES`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**Chinese-Simplified**|`string`|`zh-CN`| |**English (US)**|`string`|`en-US`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**IBM Watson**|`ibm`| `v1 (2021-08-01)`  |**Google Cloud**|`google`| `v1`  |**Lettria**|`lettria`| `v5.5.2` 
 
 ### Example
 ```javascript
@@ -265,7 +265,7 @@ Name | Type | Description  | Notes
 
 
 
-Sentiment analysis API extracts sentiment in a given string of text.Sentiment analysis, also called 'opinion mining',uses natural language processing, text analysis and computational linguistics to identify and detect subjective information from the input text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Chinese-Traditional**|`string`|`zh-TW`| |**German**|`string`|`de-DE`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Chinese-Simplified**|`string`|`zh-CN`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Japanese**|`string`|`ja-JP`| |**Arabic**|`string`|`ar-XA`| |**Italian**|`string`|`it-IT`| |**Korean**|`string`|`ko-KR`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Microsoft Azure**|`microsoft`| `v3.1`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**IBM Watson**|`ibm`| `v1 (2021-08-01)`  |**Lettria**|`lettria`| `v5.5.2`  |**Connexun**|`connexun`| `v1.0` 
+Sentiment analysis API extracts sentiment in a given string of text.Sentiment analysis, also called 'opinion mining',uses natural language processing, text analysis and computational linguistics to identify and detect subjective information from the input text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Italian**|`string`|`it-IT`| |**German**|`string`|`de-DE`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**Japanese**|`string`|`ja-JP`| |**Chinese-Traditional**|`string`|`zh-TW`| |**French**|`string`|`fr-FR`| |**Korean**|`string`|`ko-KR`| |**Arabic**|`string`|`ar-XA`| |**Spanish**|`string`|`es-ES`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**Chinese-Simplified**|`string`|`zh-CN`| |**English (US)**|`string`|`en-US`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Microsoft Azure**|`microsoft`| `v3.1`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**IBM Watson**|`ibm`| `v1 (2021-08-01)`  |**Lettria**|`lettria`| `v5.5.2` 
 
 ### Example
 ```javascript
@@ -324,7 +324,7 @@ Name | Type | Description  | Notes
 
 
 
-Syntax analysis consists principaly in highlighting the structure of a text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Chinese-Traditional**|`string`|`zh-TW`| |**Swedish**|`string`|`sw-SW`| |**German**|`string`|`de-DE`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Chinese-Simplified**|`string`|`zh-CN`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Japanese**|`string`|`ja-JP`| |**Finnish**|`string`|`fn-FN`| |**Arabic**|`string`|`ar-XA`| |**Italian**|`string`|`it-IT`| |**Korean**|`string`|`ko-KR`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**IBM Watson**|`ibm`| `v1 (2021-08-01)`  |**Lettria**|`lettria`| `v5.5.2`  |**Google Cloud**|`google`| `v1` 
+Syntax analysis consists principaly in highlighting the structure of a text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Italian**|`string`|`it-IT`| |**German**|`string`|`de-DE`| |**Swedish**|`string`|`sw-SW`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**Japanese**|`string`|`ja-JP`| |**Chinese-Traditional**|`string`|`zh-TW`| |**French**|`string`|`fr-FR`| |**Korean**|`string`|`ko-KR`| |**Finnish**|`string`|`fn-FN`| |**Arabic**|`string`|`ar-XA`| |**Spanish**|`string`|`es-ES`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**Chinese-Simplified**|`string`|`zh-CN`| |**English (US)**|`string`|`en-US`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**IBM Watson**|`ibm`| `v1 (2021-08-01)`  |**Lettria**|`lettria`| `v5.5.2`  |**Google Cloud**|`google`| `v1` 
 
 ### Example
 ```javascript
@@ -383,7 +383,7 @@ Name | Type | Description  | Notes
 
 
 
-Text summarization is a technique for extracting the most important sentences from a text in order to create a smaller version of the text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----|   **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Connexun**|`connexun`| `v1.0`  |**Microsoft Azure**|`microsoft`| `v3.1`  |**MeaningCloud**|`meaningcloud`| `v1.0`  |**OpenAI Ada**|`openai_ada`| `v1`  |**OpenAI Davinci**|`openai_davinci`| `v1` 
+Text summarization is a technique for extracting the most important sentences from a text in order to create a smaller version of the text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----|   **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Microsoft Azure**|`microsoft`| `v3.1`  |**MeaningCloud**|`meaningcloud`| `v1`  |**OpenAI Ada**|`openai_ada`| `v1`  |**OpenAI Davinci**|`openai_davinci`| `v1` 
 
 ### Example
 ```javascript
