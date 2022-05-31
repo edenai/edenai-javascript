@@ -1,4 +1,4 @@
-# EdenAiApiDocumentation.PipelinesApi
+# Edenai.PipelinesApi
 
 All URIs are relative to *https://api.edenai.run/v1*
 
@@ -17,8 +17,8 @@ Pipelines let you combine different AI APIs from different providers into a sing
 
 ### Example
 ```javascript
-var EdenAiApiDocumentation = require('eden_ai_api_documentation');
-var defaultClient = EdenAiApiDocumentation.ApiClient.instance;
+var Edenai = require('Edenai');
+var defaultClient = Edenai.ApiClient.instance;
 
 // Configure API key authorization: Bearer
 var Bearer = defaultClient.authentications['Bearer'];
@@ -26,7 +26,7 @@ Bearer.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Bearer.apiKeyPrefix = 'Token';
 
-var apiInstance = new EdenAiApiDocumentation.PipelinesApi();
+var apiInstance = new Edenai.PipelinesApi();
 
 var description = "description_example"; // String | The desciption field must be an array of ordered dictionaries.                                                      Each dictionary describes the feature to call. in fact, it has to contain two keys \"feature\" and \"params\".   * feature conatins a string (the value of the feature ex : automatic_translation).  * params contains a dictionary of parameters to be used to call the feature, see the feature corresponding documentation to know which parameters well be needed.   ex : `[ { \"feature\": \"ocr\",  \"params\": { \"providers\": \"['amazon']\",\"language\": \"en-US\" } }, { \"feature\": \"syntax_analysis\",  \"params\": { \"providers\": \"['amazon']\",\"language\": \"en-US\" } }]`                                                      
 
