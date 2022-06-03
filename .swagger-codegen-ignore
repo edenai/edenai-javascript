@@ -31,3 +31,4 @@ README.md
 package.json
 swagger-codegen-cli.jar
 test/edenai/
+test/Edenai/

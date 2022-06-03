@@ -4,4 +4,5 @@ services:
     build: .
     volumes:
       - ".:/edenai-javascript"
+      - /edenai-javascript/node_modules
     entrypoint: ["tail", "-f", "/dev/null"] 

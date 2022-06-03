@@ -60,20 +60,20 @@
                 return;
               }
               // TODO: update response assertions
-              expect(data).to.be.a(Edenai.InlineResponse2005);
+              expect(data).to.be.an('object');
               {
                 let dataCtr = data.result;
                 expect(dataCtr).to.be.an(Array);
                 expect(dataCtr).to.not.be.empty();
                 for (let p in dataCtr) {
                   let data = dataCtr[p];
-                  expect(data).to.be.a(Edenai.InlineResponse2005Result1);
+                  expect(data).to.be.an('object');
                   expect(data.solutionName).to.be.a("string");
                   expect(data.provider).to.be.a("string");
                   expect(data.status).to.be.a("string");
                   expect(data.executionTime).to.be.a("number");
                   expect(data.originalResult).to.be.a(Object);
-                  expect(data.result).to.be.a(Edenai.InlineResponse2005Result);
+                  expect(data.result).to.be.an('object');
                   expect(data.result.text).to.be.a("string");
                   {
                     let dataCtr = data.result.keywords;
@@ -119,20 +119,20 @@
                 return;
               }
               // TODO: update response assertions
-              expect(data).to.be.a(Edenai.InlineResponse2006);
+              expect(data).to.be.an('object');
               {
                 let dataCtr = data.result;
                 expect(dataCtr).to.be.an(Array);
                 expect(dataCtr).to.not.be.empty();
                 for (let p in dataCtr) {
                   let data = dataCtr[p];
-                  expect(data).to.be.a(Edenai.InlineResponse2006Result1);
+                  expect(data).to.be.an('object');
                   expect(data.solutionName).to.be.a("string");
                   expect(data.provider).to.be.a("string");
                   expect(data.status).to.be.a("string");
                   expect(data.executionTime).to.be.a("number");
                   expect(data.originalResult).to.be.a(Object);
-                  expect(data.result).to.be.a(Edenai.InlineResponse2006Result);
+                  expect(data.result).to.be.an('object');
                   expect(data.result.text).to.be.a("string");
                   {
                     let dataCtr = data.result.entities;
@@ -170,15 +170,6 @@
                       expect(data).to.be(null);
                     }
                   }
-                  {
-                    let dataCtr = data.result.classifications;
-                    expect(dataCtr).to.be.an(Object);
-                    expect(dataCtr).to.not.be.empty();
-                    for (let p in dataCtr) {
-                      let data = dataCtr[p];
-                      expect(data).to.be.a(Object);
-                    }
-                  }
                 }
               }
 
@@ -205,20 +196,20 @@
                 return;
               }
               // TODO: update response assertions
-              expect(data).to.be.a(Edenai.InlineResponse2007);
+              expect(data).to.be.an('object');
               {
                 let dataCtr = data.result;
                 expect(dataCtr).to.be.an(Array);
                 expect(dataCtr).to.not.be.empty();
                 for (let p in dataCtr) {
                   let data = dataCtr[p];
-                  expect(data).to.be.a(Edenai.InlineResponse2007Result1);
+                  expect(data).to.be.an('object');
                   expect(data.solutionName).to.be.a("string");
                   expect(data.provider).to.be.a("string");
                   expect(data.status).to.be.a("string");
                   expect(data.executionTime).to.be.a("number");
                   expect(data.originalResult).to.be.a(Object);
-                  expect(data.result).to.be.a(Edenai.InlineResponse2007Result);
+                  expect(data.result).to.be.an('object');
                   expect(data.result.text).to.be.a("string");
                   {
                     let dataCtr = data.result.sentiments;
@@ -264,20 +255,20 @@
                 return;
               }
               // TODO: update response assertions
-              expect(data).to.be.a(Edenai.InlineResponse2008);
+              expect(data).to.be.an('object');
               {
                 let dataCtr = data.result;
                 expect(dataCtr).to.be.an(Array);
                 expect(dataCtr).to.not.be.empty();
                 for (let p in dataCtr) {
                   let data = dataCtr[p];
-                  expect(data).to.be.a(Edenai.InlineResponse2008Result1);
+                  expect(data).to.be.an('object');
                   expect(data.solutionName).to.be.a("string");
                   expect(data.provider).to.be.a("string");
                   expect(data.status).to.be.a("string");
                   expect(data.executionTime).to.be.a("number");
                   expect(data.originalResult).to.be.a(Object);
-                  expect(data.result).to.be.a(Edenai.InlineResponse2008Result);
+                  expect(data.result).to.be.an('object');
                   expect(data.result.text).to.be.a("string");
                   {
                     let dataCtr = data.result.keywords;
@@ -335,6 +326,7 @@
       describe("questionAnswering", function () {
         it("should call questionAnswering successfully", function (done) {
           // TODO: uncomment, update parameter values for questionAnswering call and complete the assertions
+          // this.timeout(60000)
           var texts = "['List of texts']";
           var question = "What kind of list ?";
           var providers = "['openai_ada', 'openai_davinci']";
@@ -348,20 +340,24 @@
             providers,
             examplesContext,
             examples,
+            {},
             function (error, data, response) {
+              // console.log('questionAnswering')
+              // console.log(data)
+              // console.log(error)
               if (error) {
                 done(error);
                 return;
               }
               // TODO: update response assertions
-              expect(data).to.be.a(Edenai.InlineResponse2007);
+              expect(data).to.be.an('object');
               {
                 let dataCtr = data.result;
                 expect(dataCtr).to.be.an(Array);
                 expect(dataCtr).to.not.be.empty();
                 for (let p in dataCtr) {
                   let data = dataCtr[p];
-                  expect(data).to.be.a(Edenai.InlineResponse2007Result);
+                  expect(data).to.be.an('object');
                   expect(data.solutionName).to.be.a("string");
                   expect(data.solutionName).to.be("");
                   expect(data.provider).to.be.a("string");
@@ -407,14 +403,14 @@
                 return;
               }
               // TODO: update response assertions
-              expect(data).to.be.a(Edenai.InlineResponse2008);
+              expect(data).to.be.an('object');
               {
                 let dataCtr = data.result;
                 expect(dataCtr).to.be.an(Array);
                 expect(dataCtr).to.not.be.empty();
                 for (let p in dataCtr) {
                   let data = dataCtr[p];
-                  expect(data).to.be.a(Edenai.InlineResponse2008Result1);
+                  expect(data).to.be.an('object');
                   expect(data.solutionName).to.be.a("string");
                   expect(data.solutionName).to.be("");
                   expect(data.provider).to.be.a("string");
@@ -431,7 +427,7 @@
                     expect(dataCtr).to.not.be.empty();
                     for (let p in dataCtr) {
                       let data = dataCtr[p];
-                      expect(data).to.be.a(Edenai.InlineResponse2008Result);
+                      expect(data).to.be.an('object');
                       expect(data.document).to.be.a("number");
                       expect(data.document).to.be();
                       expect(data._object).to.be.a("string");
@@ -464,14 +460,14 @@
                 return;
               }
               // TODO: update response assertions
-              expect(data).to.be.a(Edenai.InlineResponse20011);
+              expect(data).to.be.an('object');
               {
                 let dataCtr = data.result;
                 expect(dataCtr).to.be.an(Array);
                 expect(dataCtr).to.not.be.empty();
                 for (let p in dataCtr) {
                   let data = dataCtr[p];
-                  expect(data).to.be.a(Edenai.InlineResponse20011Result1);
+                  expect(data).to.be.an('object');
                   expect(data.solutionName).to.be.a("string");
                   expect(data.solutionName).to.be("");
                   expect(data.provider).to.be.a("string");
@@ -482,7 +478,7 @@
                   expect(data.executionTime).to.be();
                   expect(data.originalResult).to.be.a(Object);
                   expect(data.originalResult).to.be();
-                  expect(data.result).to.be.a(Edenai.InlineResponse20011Result);
+                  expect(data.result).to.be.an('object');
                   expect(data.result.text).to.be.a("string");
                   expect(data.result.text).to.be("");
                   expect(data.result.summary).to.be.a("string");

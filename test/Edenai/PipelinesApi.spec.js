@@ -69,7 +69,7 @@
                 return;
               }
               // TODO: update response assertions
-              expect(data).to.be.a(Edenai.InlineResponse200);
+              expect(data).to.be.an('object');
               expect(data.result).to.be.a(Object);
 
               done();

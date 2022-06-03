@@ -65,7 +65,7 @@
                 return;
               }
               // TODO: update response assertions
-              expect(data).to.be.a(Edenai.InlineResponse2003);
+              expect(data).to.be.an('object');
               {
                 let dataCtr = data.result;
                 expect(dataCtr).to.be.an(Array);
@@ -73,30 +73,14 @@
                 for (let p in dataCtr) {
                   let data = dataCtr[p];
 
-                  expect(data).to.be.a(Edenai.InlineResponse2003Result1);
+                  expect(data).to.be.an('object');
                   expect(data.solutionName).to.be.a("string");
                   expect(data.provider).to.be.a("string");
                   expect(data.status).to.be.a("string");
                   expect(data.executionTime).to.be.a("number");
                   expect(data.originalResult).to.be.a(Object);
-                  expect(data.result).to.be.a(Edenai.InlineResponse2003Result);
+                  expect(data.result).to.be.an('object');
                   expect(data.result.text).to.be.a("string");
-                  // {
-                  //   let dataCtr = data.result.boundingBoxes;
-                  //   expect(dataCtr).to.be.an(Array);
-                  //   expect(dataCtr).to.not.be.empty();
-                  //   for (let p in dataCtr) {
-                  //     let data = dataCtr[p];
-                  //     expect(data).to.be.a(
-                  //       Edenai.InlineResponse2003ResultBoundingBoxes
-                  //     );
-                  //     expect(data.wordText).to.be.a("string");
-                  //     expect(data.left).to.be.a("number");
-                  //     expect(data.top).to.be.a("number");
-                  //     expect(data.width).to.be.a("number");
-                  //     expect(data.hight).to.be.a("number");
-                  //   }
-                  // }
                 }
               }
 
@@ -122,14 +106,14 @@
                 return;
               }
               // TODO: update response assertions
-              expect(data).to.be.a(Edenai.InlineResponse2004);
+              expect(data).to.be.an('object');
               {
                 let dataCtr = data.result;
                 expect(dataCtr).to.be.an(Array);
                 expect(dataCtr).to.not.be.empty();
                 for (let p in dataCtr) {
                   let data = dataCtr[p];
-                  expect(data).to.be.a(Edenai.InlineResponse2004Result1);
+                  expect(data).to.be.an('object');
                   expect(data.solutionName).to.be.a("string");
                   expect(data.provider).to.be.a("string");
                   expect(data.status).to.be.a("string");
@@ -141,21 +125,17 @@
                     expect(dataCtr).to.not.be.empty();
                     for (let p in dataCtr) {
                       let data = dataCtr[p];
-                      expect(data).to.be.a(Edenai.InlineResponse2004Result);
+                      expect(data).to.be.an('object');
                       {
                         let dataCtr = data;
                         // console.log(dataCtr);
                         expect(dataCtr).to.be.an(Object);
                         expect(dataCtr).to.not.be.empty();
-                        expect(dataCtr.customerInformation).to.be.a(
-                          Edenai.InlineResponse2004CustomerInformation
-                        );
+                        expect(dataCtr.customerInformation).to.be.an('object');
                         expect(
                           dataCtr.customerInformation.customerAddress
                         ).to.be.a("string");
-                        expect(dataCtr.merchantInformation).to.be.a(
-                          Edenai.InlineResponse2004MerchantInformation
-                        );
+                        expect(dataCtr.merchantInformation).to.be.an('object');
                         expect(
                           dataCtr.merchantInformation.merchantAddress
                         ).to.be.a("string");
@@ -172,16 +152,16 @@
                       //version swagger de base qui marche pas pcq ocr invoice a un retour de merde !
                       // for (let p in dataCtr) {
                       //   let data = dataCtr[p];
-                      //   expect(data).to.be.a(Edenai.InlineResponse2004Results);
+                      //   expect(data).to.be.an('object');
                       //   expect(data.wordText).to.be.a('string');
                       //   expect(data.left).to.be.a('number');
                       //   expect(data.top).to.be.a('number');
                       //   expect(data.width).to.be.a('number');
                       //   expect(data.hight).to.be.a('number');
-                      //   expect(data.customerInformation).to.be.a(Edenai.InlineResponse2004CustomerInformation);
+                      //   expect(data.customerInformation).to.be.an('object');
                       //   expect(data.customerInformation.customerAddress).to.be.a('string');
                       //   expect(data.customerInformation.customerName).to.be.a('string');
-                      //   expect(data.merchantInformation).to.be.a(Edenai.InlineResponse2004MerchantInformation);
+                      //   expect(data.merchantInformation).to.be.an('object');
                       //   expect(data.merchantInformation.merchantAddress).to.be.a('string');
                       //   expect(data.merchantInformation.merchantName).to.be.a('string');
                       //   expect(data.invoiceTotal).to.be.a('string');
@@ -190,7 +170,7 @@
                       //   expect(data.dueDate).to.be.a('string');
                       //   expect(data.invoiceNumber).to.be.a('string');
                       //   expect(data.taxes).to.be.a('string');
-                      //   expect(data.locale).to.be.a(Edenai.InlineResponse2004Locale);
+                      //   expect(data.locale).to.be.an('object');
                       //   expect(data.locale.currency).to.be.a('string');
                       //   expect(data.locale.language).to.be.a('string');
                       //   {
@@ -199,7 +179,7 @@
                       //     expect(dataCtr).to.not.be.empty();
                       //     for (let p in dataCtr) {
                       //       let data = dataCtr[p];
-                      //       expect(data).to.be.a(Edenai.InlineResponse2004ItemLines);
+                      //       expect(data).to.be.an('object');
                       //       expect(data.amount).to.be.a('string');
                       //       expect(data.description).to.be.a('string');
                       //       expect(data.quantity).to.be.a('string');
@@ -233,14 +213,14 @@
                 return;
               }
               // TODO: update response assertions
-              expect(data).to.be.a(Edenai.InlineResponse2006);
+              expect(data).to.be.an('object');
               {
                 let dataCtr = data.result;
                 expect(dataCtr).to.be.an(Array);
                 expect(dataCtr).to.not.be.empty();
                 for (let p in dataCtr) {
                   let data = dataCtr[p];
-                  expect(data).to.be.a(Edenai.InlineResponse2006Result1);
+                  expect(data).to.be.an('object');
                   expect(data.solutionName).to.be.a("string");
                   expect(data.solutionName).to.be("");
                   expect(data.provider).to.be.a("string");
@@ -257,7 +237,7 @@
                     expect(dataCtr).to.not.be.empty();
                     for (let p in dataCtr) {
                       let data = dataCtr[p];
-                      expect(data).to.be.a(Edenai.InlineResponse2006Result);
+                      expect(data).to.be.an('object');
                       expect(data.text).to.be.a("string");
                       expect(data.text).to.be("");
                       {
@@ -266,9 +246,7 @@
                         expect(dataCtr).to.not.be.empty();
                         for (let p in dataCtr) {
                           let data = dataCtr[p];
-                          expect(data).to.be.a(
-                            Edenai.InlineResponse2006Results
-                          );
+                          expect(data).to.be.an('object');
                           expect(data.wordText).to.be.a("string");
                           expect(data.wordText).to.be("");
                           expect(data.left).to.be.a("number");
@@ -279,9 +257,7 @@
                           expect(data.width).to.be();
                           expect(data.hight).to.be.a("number");
                           expect(data.hight).to.be();
-                          expect(data.customerInformation).to.be.a(
-                            Edenai.InlineResponse2006CustomerInformation
-                          );
+                          expect(data.customerInformation).to.be.an('object');
                           expect(
                             data.customerInformation.customerAddress
                           ).to.be.a("string");
@@ -294,9 +270,7 @@
                           expect(data.customerInformation.customerName).to.be(
                             ""
                           );
-                          expect(data.merchantInformation).to.be.a(
-                            Edenai.InlineResponse2006MerchantInformation
-                          );
+                          expect(data.merchantInformation).to.be.an('object');
                           expect(
                             data.merchantInformation.merchantAddress
                           ).to.be.a("string");
@@ -321,9 +295,7 @@
                           expect(data.invoiceNumber).to.be("");
                           expect(data.taxes).to.be.a("string");
                           expect(data.taxes).to.be("");
-                          expect(data.locale).to.be.a(
-                            Edenai.InlineResponse2006Locale
-                          );
+                          expect(data.locale).to.be.an('object');
                           expect(data.locale.currency).to.be.a("string");
                           expect(data.locale.currency).to.be("");
                           expect(data.locale.language).to.be.a("string");
@@ -334,9 +306,7 @@
                             expect(dataCtr).to.not.be.empty();
                             for (let p in dataCtr) {
                               let data = dataCtr[p];
-                              expect(data).to.be.a(
-                                Edenai.InlineResponse2006ItemLines
-                              );
+                              expect(data).to.be.an('object');
                               expect(data.amount).to.be.a("string");
                               expect(data.amount).to.be("");
                               expect(data.description).to.be.a("string");
@@ -380,14 +350,14 @@
                 return;
               }
               // TODO: update response assertions
-              expect(data).to.be.a(Edenai.InlineResponse204);
+              expect(data).to.be.an('object');
               {
                 let dataCtr = data.result;
                 expect(dataCtr).to.be.an(Array);
                 expect(dataCtr).to.not.be.empty();
                 for (let p in dataCtr) {
                   let data = dataCtr[p];
-                  expect(data).to.be.a(Edenai.InlineResponse204Result1);
+                  expect(data).to.be.an('object');
                   expect(data.solutionName).to.be.a("string");
                   expect(data.solutionName).to.be("");
                   expect(data.status).to.be.a("string");
@@ -396,7 +366,7 @@
                   expect(data.error).to.be("");
                   expect(data.originalResult).to.be.a(Object);
                   expect(data.originalResult).to.be();
-                  expect(data.result).to.be.a(Edenai.InlineResponse204Result);
+                  expect(data.result).to.be.an('object');
                   expect(data.result.jobId).to.be.a("string");
                   expect(data.result.jobId).to.be("");
                   expect(data.result.status).to.be.a("string");

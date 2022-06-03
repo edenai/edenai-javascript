@@ -63,20 +63,20 @@
                 return;
               }
               // TODO: update response assertions
-              expect(data).to.be.a(Edenai.InlineResponse2009);
+              expect(data).to.be.an('object');
               {
                 let dataCtr = data.result;
                 expect(dataCtr).to.be.an(Array);
                 expect(dataCtr).to.not.be.empty();
                 for (let p in dataCtr) {
                   let data = dataCtr[p];
-                  expect(data).to.be.a(Edenai.InlineResponse2009Result1);
+                  expect(data).to.be.an('object');
                   expect(data.solutionName).to.be.a("string");
                   expect(data.provider).to.be.a("string");
                   expect(data.status).to.be.a("string");
                   expect(data.executionTime).to.be.a("number");
                   expect(data.originalResult).to.be.a(Object);
-                  expect(data.result).to.be.a(Edenai.InlineResponse2009Result);
+                  expect(data.result).to.be.an('object');
                   expect(data.result.sourceLanguage).to.be.a("string");
                   expect(data.result.targetLanguage).to.be.a("string");
                   expect(data.result.translatedText).to.be.a("string");
@@ -104,20 +104,20 @@
                 return;
               }
               // TODO: update response assertions
-              expect(data).to.be.a(Edenai.InlineResponse20010);
+              expect(data).to.be.an('object');
               {
                 let dataCtr = data.result;
                 expect(dataCtr).to.be.an(Array);
                 expect(dataCtr).to.not.be.empty();
                 for (let p in dataCtr) {
                   let data = dataCtr[p];
-                  expect(data).to.be.a(Edenai.InlineResponse20010Result1);
+                  expect(data).to.be.an('object');
                   expect(data.solutionName).to.be.a("string");
                   expect(data.provider).to.be.a("string");
                   expect(data.status).to.be.a("string");
                   expect(data.executionTime).to.be.a("number");
                   expect(data.originalResult).to.be.a(Object);
-                  expect(data.result).to.be.a(Edenai.InlineResponse20010Result);
+                  expect(data.result).to.be.an('object');
                   expect(data.result.text).to.be.a("string");
                   {
                     let dataCtr = data.result.languages;

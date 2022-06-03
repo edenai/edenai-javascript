@@ -48,7 +48,7 @@
           // TODO: uncomment, update parameter values for search call and complete the assertions
 
           var text = "ceci est un texte";
-          var words = "['aze','est','crotte']";
+          var words = ['aze','est','crotte'];
 
           instance.search(text, words, function (error, data, response) {
             if (error) {
