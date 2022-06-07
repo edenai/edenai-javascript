@@ -60,20 +60,20 @@
                 return;
               }
               // TODO: update response assertions
-              expect(data).to.be.an('object');
+              expect(data).to.be.an("object");
               {
                 let dataCtr = data.result;
                 expect(dataCtr).to.be.an(Array);
                 expect(dataCtr).to.not.be.empty();
                 for (let p in dataCtr) {
                   let data = dataCtr[p];
-                  expect(data).to.be.an('object');
+                  expect(data).to.be.an("object");
                   expect(data.solutionName).to.be.a("string");
                   expect(data.provider).to.be.a("string");
                   expect(data.status).to.be.a("string");
                   expect(data.executionTime).to.be.a("number");
                   expect(data.originalResult).to.be.a(Object);
-                  expect(data.result).to.be.an('object');
+                  expect(data.result).to.be.an("object");
                   expect(data.result.text).to.be.a("string");
                   {
                     let dataCtr = data.result.keywords;
@@ -119,20 +119,20 @@
                 return;
               }
               // TODO: update response assertions
-              expect(data).to.be.an('object');
+              expect(data).to.be.an("object");
               {
                 let dataCtr = data.result;
                 expect(dataCtr).to.be.an(Array);
                 expect(dataCtr).to.not.be.empty();
                 for (let p in dataCtr) {
                   let data = dataCtr[p];
-                  expect(data).to.be.an('object');
+                  expect(data).to.be.an("object");
                   expect(data.solutionName).to.be.a("string");
                   expect(data.provider).to.be.a("string");
                   expect(data.status).to.be.a("string");
                   expect(data.executionTime).to.be.a("number");
                   expect(data.originalResult).to.be.a(Object);
-                  expect(data.result).to.be.an('object');
+                  expect(data.result).to.be.an("object");
                   expect(data.result.text).to.be.a("string");
                   {
                     let dataCtr = data.result.entities;
@@ -196,20 +196,20 @@
                 return;
               }
               // TODO: update response assertions
-              expect(data).to.be.an('object');
+              expect(data).to.be.an("object");
               {
                 let dataCtr = data.result;
                 expect(dataCtr).to.be.an(Array);
                 expect(dataCtr).to.not.be.empty();
                 for (let p in dataCtr) {
                   let data = dataCtr[p];
-                  expect(data).to.be.an('object');
+                  expect(data).to.be.an("object");
                   expect(data.solutionName).to.be.a("string");
                   expect(data.provider).to.be.a("string");
                   expect(data.status).to.be.a("string");
                   expect(data.executionTime).to.be.a("number");
                   expect(data.originalResult).to.be.a(Object);
-                  expect(data.result).to.be.an('object');
+                  expect(data.result).to.be.an("object");
                   expect(data.result.text).to.be.a("string");
                   {
                     let dataCtr = data.result.sentiments;
@@ -255,20 +255,20 @@
                 return;
               }
               // TODO: update response assertions
-              expect(data).to.be.an('object');
+              expect(data).to.be.an("object");
               {
                 let dataCtr = data.result;
                 expect(dataCtr).to.be.an(Array);
                 expect(dataCtr).to.not.be.empty();
                 for (let p in dataCtr) {
                   let data = dataCtr[p];
-                  expect(data).to.be.an('object');
+                  expect(data).to.be.an("object");
                   expect(data.solutionName).to.be.a("string");
                   expect(data.provider).to.be.a("string");
                   expect(data.status).to.be.a("string");
                   expect(data.executionTime).to.be.a("number");
                   expect(data.originalResult).to.be.a(Object);
-                  expect(data.result).to.be.an('object');
+                  expect(data.result).to.be.an("object");
                   expect(data.result.text).to.be.a("string");
                   {
                     let dataCtr = data.result.keywords;
@@ -342,41 +342,28 @@
             examples,
             {},
             function (error, data, response) {
-              // console.log('questionAnswering')
-              // console.log(data)
-              // console.log(error)
               if (error) {
                 done(error);
                 return;
               }
               // TODO: update response assertions
-              expect(data).to.be.an('object');
+              expect(data).to.be.an("object");
               {
                 let dataCtr = data.result;
                 expect(dataCtr).to.be.an(Array);
                 expect(dataCtr).to.not.be.empty();
                 for (let p in dataCtr) {
                   let data = dataCtr[p];
-                  expect(data).to.be.an('object');
+                  expect(data).to.be.an("object");
                   expect(data.solutionName).to.be.a("string");
-                  expect(data.solutionName).to.be("");
                   expect(data.provider).to.be.a("string");
-                  expect(data.provider).to.be("");
                   expect(data.status).to.be.a("string");
-                  expect(data.status).to.be("");
                   expect(data.executionTime).to.be.a("number");
-                  expect(data.executionTime).to.be();
                   expect(data.originalResult).to.be.a(Object);
-                  expect(data.originalResult).to.be();
                   {
                     let dataCtr = data.result;
                     expect(dataCtr).to.be.an(Array);
                     expect(dataCtr).to.not.be.empty();
-                    for (let p in dataCtr) {
-                      let data = dataCtr[p];
-                      expect(data).to.be.a(Object);
-                      expect(data).to.be();
-                    }
                   }
                 }
               }
@@ -391,7 +378,7 @@
           // TODO: uncomment, update parameter values for search call and complete the assertions
           var texts = "['Hello World', 'Goodbye Mars']";
           var query = "Earth";
-          var providers = "['openai_ada', 'openai_davinci']";
+          var providers = "['openai_ada']";
 
           instance.search(
             texts,
@@ -403,37 +390,29 @@
                 return;
               }
               // TODO: update response assertions
-              expect(data).to.be.an('object');
+              expect(data).to.be.an("object");
               {
                 let dataCtr = data.result;
                 expect(dataCtr).to.be.an(Array);
                 expect(dataCtr).to.not.be.empty();
                 for (let p in dataCtr) {
                   let data = dataCtr[p];
-                  expect(data).to.be.an('object');
+                  expect(data).to.be.an("object");
                   expect(data.solutionName).to.be.a("string");
-                  expect(data.solutionName).to.be("");
                   expect(data.provider).to.be.a("string");
-                  expect(data.provider).to.be("");
                   expect(data.status).to.be.a("string");
-                  expect(data.status).to.be("");
                   expect(data.executionTime).to.be.a("number");
-                  expect(data.executionTime).to.be();
                   expect(data.originalResult).to.be.a(Object);
-                  expect(data.originalResult).to.be();
                   {
                     let dataCtr = data.result;
                     expect(dataCtr).to.be.an(Array);
                     expect(dataCtr).to.not.be.empty();
                     for (let p in dataCtr) {
                       let data = dataCtr[p];
-                      expect(data).to.be.an('object');
+                      expect(data).to.be.an("object");
                       expect(data.document).to.be.a("number");
-                      expect(data.document).to.be();
                       expect(data._object).to.be.a("string");
-                      expect(data._object).to.be("");
                       expect(data.score).to.be.a("number");
-                      expect(data.score).to.be();
                     }
                   }
                 }
@@ -449,7 +428,7 @@
           // TODO: uncomment, update parameter values for textSummarization call and complete the assertions
           var text =
             "Washington, D.C., formally the District of Columbia, also known as just Washington or just D.C., is the capital city and only federal district of the United States. It is located on the east bank of the Potomac River, which forms its southwestern and southern border with the U.S. state of Virginia, and shares a land border with the U.S. state of Maryland on its remaining sides. The city was named for George Washington, a Founding Father and the first president of the United States, and the federal district is named after Columbia, a female personification of the nation. As the seat of the U.S. federal government and several international organizations, the city is an important world political capital. It is one of the most visited cities in the U.S., seeing over 20 million visitors in 2016.";
-          var providers = "['openai_ada', 'openai_davinci']";
+          var providers = "['openai_ada']";
 
           instance.textSummarization(
             text,
@@ -460,29 +439,21 @@
                 return;
               }
               // TODO: update response assertions
-              expect(data).to.be.an('object');
+              expect(data).to.be.an("object");
               {
                 let dataCtr = data.result;
                 expect(dataCtr).to.be.an(Array);
                 expect(dataCtr).to.not.be.empty();
                 for (let p in dataCtr) {
                   let data = dataCtr[p];
-                  expect(data).to.be.an('object');
+                  expect(data).to.be.an("object");
                   expect(data.solutionName).to.be.a("string");
-                  expect(data.solutionName).to.be("");
                   expect(data.provider).to.be.a("string");
-                  expect(data.provider).to.be("");
                   expect(data.status).to.be.a("string");
-                  expect(data.status).to.be("");
                   expect(data.executionTime).to.be.a("number");
-                  expect(data.executionTime).to.be();
                   expect(data.originalResult).to.be.a(Object);
-                  expect(data.originalResult).to.be();
-                  expect(data.result).to.be.an('object');
-                  expect(data.result.text).to.be.a("string");
-                  expect(data.result.text).to.be("");
-                  expect(data.result.summary).to.be.a("string");
-                  expect(data.result.summary).to.be("");
+                  expect(data.result).to.be.an("object");
+                  expect(data.result).to.not.be.empty();
                 }
               }
 

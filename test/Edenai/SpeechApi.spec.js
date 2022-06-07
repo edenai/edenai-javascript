@@ -70,8 +70,8 @@
                 return;
               }
               // TODO: update response assertions
-              expect(data).to.be.an('object');
-              expect(data.result).to.be.a('object');
+              expect(data).to.be.an("object");
+              expect(data.result).to.be.a("object");
               expect(data.result.jobId).to.be.a("string");
               expect(data.result.status).to.be.a("string");
 
@@ -104,20 +104,20 @@
                 return;
               }
               // TODO: update response assertions
-              expect(data).to.be.an('object');
+              expect(data).to.be.an("object");
               {
                 let dataCtr = data.result;
                 expect(dataCtr).to.be.an(Array);
                 expect(dataCtr).to.not.be.empty();
                 for (let p in dataCtr) {
                   let data = dataCtr[p];
-                  expect(data).to.be.an('object');
+                  expect(data).to.be.an("object");
                   expect(data.solutionName).to.be.a("string");
                   expect(data.provider).to.be.a("string");
                   expect(data.status).to.be.a("string");
                   expect(data.executionTime).to.be.a("number");
                   expect(data.originalResult).to.be.a(Object);
-                  expect(data.result).to.be.an('object');
+                  expect(data.result).to.be.an("object");
                   expect(data.result.transcribe).to.be.a("string");
                   // expect(data.result.confidence).to.be.a("number");
                   expect(data.result.confidence).to.be.null;
@@ -131,10 +131,10 @@
       });
       describe("textToSpeech", function () {
         it("should call textToSpeech successfully", function (done) {
-          var text = "text_example";
-          var language = "language_example";
-          var option = "option_example";
-          var providers = "providers_example";
+          var text = "ceci est un texte";
+          var language = "fr-FR";
+          var option = "MALE";
+          var providers = "['google']";
 
           instance.textToSpeech(
             text,
@@ -147,23 +147,22 @@
                 return;
               }
               // TODO: update response assertions
-              expect(data).to.be.an('object');
+              expect(data).to.be.an("object");
               {
                 let dataCtr = data.result;
                 expect(dataCtr).to.be.an(Array);
                 expect(dataCtr).to.not.be.empty();
                 for (let p in dataCtr) {
                   let data = dataCtr[p];
-                  expect(data).to.be.an('object');
+                  console.log(data);
+                  expect(data).to.be.an("object");
                   expect(data.solutionName).to.be.a("string");
                   expect(data.provider).to.be.a("string");
                   expect(data.status).to.be.a("string");
                   expect(data.executionTime).to.be.a("number");
-                  expect(data.originalResult).to.be.a(Object);
-                  expect(data.result).to.be.an('object');
-                  expect(data.result.text).to.be.a("string");
+                  expect(data.result).to.be.an("object");
                   expect(data.result.audioPath).to.be.a("string");
-                  expect(data.result.voiceType).to.be.a("string");
+                  expect(data.result.audioPath).to.not.be.empty();
                 }
               }
 

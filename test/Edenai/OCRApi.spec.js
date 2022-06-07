@@ -65,7 +65,7 @@
                 return;
               }
               // TODO: update response assertions
-              expect(data).to.be.an('object');
+              expect(data).to.be.an("object");
               {
                 let dataCtr = data.result;
                 expect(dataCtr).to.be.an(Array);
@@ -73,13 +73,13 @@
                 for (let p in dataCtr) {
                   let data = dataCtr[p];
 
-                  expect(data).to.be.an('object');
+                  expect(data).to.be.an("object");
                   expect(data.solutionName).to.be.a("string");
                   expect(data.provider).to.be.a("string");
                   expect(data.status).to.be.a("string");
                   expect(data.executionTime).to.be.a("number");
                   expect(data.originalResult).to.be.a(Object);
-                  expect(data.result).to.be.an('object');
+                  expect(data.result).to.be.an("object");
                   expect(data.result.text).to.be.a("string");
                 }
               }
@@ -94,7 +94,7 @@
           // TODO: uncomment, update parameter values for ocrInvoice call and complete the assertions
           var files = fs.ReadStream(file_path);
           var providers = "['dataleon']";
-          var language = "fr-FR";
+          var language = "en-US";
 
           instance.ocrInvoice(
             files,
@@ -106,89 +106,59 @@
                 return;
               }
               // TODO: update response assertions
-              expect(data).to.be.an('object');
+              expect(data).to.be.an("object");
               {
                 let dataCtr = data.result;
                 expect(dataCtr).to.be.an(Array);
                 expect(dataCtr).to.not.be.empty();
                 for (let p in dataCtr) {
                   let data = dataCtr[p];
-                  expect(data).to.be.an('object');
+                  expect(data).to.be.an("object");
                   expect(data.solutionName).to.be.a("string");
                   expect(data.provider).to.be.a("string");
                   expect(data.status).to.be.a("string");
                   expect(data.executionTime).to.be.a("number");
                   expect(data.originalResult).to.be.a(Object);
-                  {
-                    let dataCtr = data.result;
-                    expect(dataCtr).to.be.an(Object);
-                    expect(dataCtr).to.not.be.empty();
-                    for (let p in dataCtr) {
-                      let data = dataCtr[p];
-                      expect(data).to.be.an('object');
-                      {
-                        let dataCtr = data;
-                        // console.log(dataCtr);
-                        expect(dataCtr).to.be.an(Object);
-                        expect(dataCtr).to.not.be.empty();
-                        expect(dataCtr.customerInformation).to.be.an('object');
-                        expect(
-                          dataCtr.customerInformation.customerAddress
-                        ).to.be.a("string");
-                        expect(dataCtr.merchantInformation).to.be.an('object');
-                        expect(
-                          dataCtr.merchantInformation.merchantAddress
-                        ).to.be.a("string");
-                        expect(
-                          dataCtr.merchantInformation.merchantName
-                        ).to.be.a("string");
-                        expect(dataCtr.invoiceTotal).to.be.a("number");
-                        expect(dataCtr.subtotal).to.be.a("number");
-                        expect(dataCtr._date).to.be.a("string");
-                        expect(dataCtr.dueDate).to.be.a("string");
-                        expect(dataCtr.invoiceNumber).to.be.a("string");
-                        expect(dataCtr.taxes).to.be.a("string");
-                      }
-                      //version swagger de base qui marche pas pcq ocr invoice a un retour de merde !
-                      // for (let p in dataCtr) {
-                      //   let data = dataCtr[p];
-                      //   expect(data).to.be.an('object');
-                      //   expect(data.wordText).to.be.a('string');
-                      //   expect(data.left).to.be.a('number');
-                      //   expect(data.top).to.be.a('number');
-                      //   expect(data.width).to.be.a('number');
-                      //   expect(data.hight).to.be.a('number');
-                      //   expect(data.customerInformation).to.be.an('object');
-                      //   expect(data.customerInformation.customerAddress).to.be.a('string');
-                      //   expect(data.customerInformation.customerName).to.be.a('string');
-                      //   expect(data.merchantInformation).to.be.an('object');
-                      //   expect(data.merchantInformation.merchantAddress).to.be.a('string');
-                      //   expect(data.merchantInformation.merchantName).to.be.a('string');
-                      //   expect(data.invoiceTotal).to.be.a('string');
-                      //   expect(data.subtotal).to.be.a('string');
-                      //   expect(data._date).to.be.a('string');
-                      //   expect(data.dueDate).to.be.a('string');
-                      //   expect(data.invoiceNumber).to.be.a('string');
-                      //   expect(data.taxes).to.be.a('string');
-                      //   expect(data.locale).to.be.an('object');
-                      //   expect(data.locale.currency).to.be.a('string');
-                      //   expect(data.locale.language).to.be.a('string');
-                      //   {
-                      //     let dataCtr = data.itemLines;
-                      //     expect(dataCtr).to.be.an(Array);
-                      //     expect(dataCtr).to.not.be.empty();
-                      //     for (let p in dataCtr) {
-                      //       let data = dataCtr[p];
-                      //       expect(data).to.be.an('object');
-                      //       expect(data.amount).to.be.a('string');
-                      //       expect(data.description).to.be.a('string');
-                      //       expect(data.quantity).to.be.a('string');
-                      //       expect(data.unitPrice).to.be.a('string');
-                      //     }
-                      //   }
-                      // }
-                    }
-                  }
+                  expect(data.result).to.be.a(Object);
+                  expect(data.result).to.not.be.empty();
+                  //version swagger de base qui marche pas pcq ocr invoice a un retour de merde !
+                  // for (let p in dataCtr) {
+                  //   let data = dataCtr[p];
+                  //   expect(data).to.be.an('object');
+                  //   expect(data.wordText).to.be.a('string');
+                  //   expect(data.left).to.be.a('number');
+                  //   expect(data.top).to.be.a('number');
+                  //   expect(data.width).to.be.a('number');
+                  //   expect(data.hight).to.be.a('number');
+                  //   expect(data.customerInformation).to.be.an('object');
+                  //   expect(data.customerInformation.customerAddress).to.be.a('string');
+                  //   expect(data.customerInformation.customerName).to.be.a('string');
+                  //   expect(data.merchantInformation).to.be.an('object');
+                  //   expect(data.merchantInformation.merchantAddress).to.be.a('string');
+                  //   expect(data.merchantInformation.merchantName).to.be.a('string');
+                  //   expect(data.invoiceTotal).to.be.a('string');
+                  //   expect(data.subtotal).to.be.a('string');
+                  //   expect(data._date).to.be.a('string');
+                  //   expect(data.dueDate).to.be.a('string');
+                  //   expect(data.invoiceNumber).to.be.a('string');
+                  //   expect(data.taxes).to.be.a('string');
+                  //   expect(data.locale).to.be.an('object');
+                  //   expect(data.locale.currency).to.be.a('string');
+                  //   expect(data.locale.language).to.be.a('string');
+                  //   {
+                  //     let dataCtr = data.itemLines;
+                  //     expect(dataCtr).to.be.an(Array);
+                  //     expect(dataCtr).to.not.be.empty();
+                  //     for (let p in dataCtr) {
+                  //       let data = dataCtr[p];
+                  //       expect(data).to.be.an('object');
+                  //       expect(data.amount).to.be.a('string');
+                  //       expect(data.description).to.be.a('string');
+                  //       expect(data.quantity).to.be.a('string');
+                  //       expect(data.unitPrice).to.be.a('string');
+                  //     }
+                  //   }
+                  // }
                 }
               }
 
@@ -199,9 +169,9 @@
       });
       describe("ocrTables", function () {
         it("should call ocrTables successfully", function (done) {
-          var files = "/path/to/file.txt";
-          var providers = "providers_example";
-          var language = "language_example";
+          var files = fs.ReadStream(file_path);
+          var providers = "['microsoft']";
+          var language = "en-US";
 
           instance.ocrTables(
             files,
@@ -213,108 +183,73 @@
                 return;
               }
               // TODO: update response assertions
-              expect(data).to.be.an('object');
+              expect(data).to.be.an("object");
               {
                 let dataCtr = data.result;
                 expect(dataCtr).to.be.an(Array);
                 expect(dataCtr).to.not.be.empty();
                 for (let p in dataCtr) {
                   let data = dataCtr[p];
-                  expect(data).to.be.an('object');
+                  expect(data).to.be.an("object");
                   expect(data.solutionName).to.be.a("string");
-                  expect(data.solutionName).to.be("");
                   expect(data.provider).to.be.a("string");
-                  expect(data.provider).to.be("");
                   expect(data.status).to.be.a("string");
-                  expect(data.status).to.be("");
                   expect(data.executionTime).to.be.a("number");
-                  expect(data.executionTime).to.be();
                   expect(data.originalResult).to.be.a(Object);
-                  expect(data.originalResult).to.be();
                   {
                     let dataCtr = data.result;
                     expect(dataCtr).to.be.an(Array);
                     expect(dataCtr).to.not.be.empty();
                     for (let p in dataCtr) {
                       let data = dataCtr[p];
-                      expect(data).to.be.an('object');
+                      expect(data).to.be.an("object");
                       expect(data.text).to.be.a("string");
-                      expect(data.text).to.be("");
                       {
                         let dataCtr = data.results;
                         expect(dataCtr).to.be.an(Array);
                         expect(dataCtr).to.not.be.empty();
                         for (let p in dataCtr) {
                           let data = dataCtr[p];
-                          expect(data).to.be.an('object');
+                          expect(data).to.be.an("object");
                           expect(data.wordText).to.be.a("string");
-                          expect(data.wordText).to.be("");
                           expect(data.left).to.be.a("number");
-                          expect(data.left).to.be();
                           expect(data.top).to.be.a("number");
-                          expect(data.top).to.be();
                           expect(data.width).to.be.a("number");
-                          expect(data.width).to.be();
                           expect(data.hight).to.be.a("number");
-                          expect(data.hight).to.be();
-                          expect(data.customerInformation).to.be.an('object');
+                          expect(data.customerInformation).to.be.an("object");
                           expect(
                             data.customerInformation.customerAddress
                           ).to.be.a("string");
-                          expect(
-                            data.customerInformation.customerAddress
-                          ).to.be("");
                           expect(data.customerInformation.customerName).to.be.a(
                             "string"
                           );
-                          expect(data.customerInformation.customerName).to.be(
-                            ""
-                          );
-                          expect(data.merchantInformation).to.be.an('object');
+                          expect(data.merchantInformation).to.be.an("object");
                           expect(
                             data.merchantInformation.merchantAddress
                           ).to.be.a("string");
-                          expect(
-                            data.merchantInformation.merchantAddress
-                          ).to.be("");
                           expect(data.merchantInformation.merchantName).to.be.a(
                             "string"
                           );
-                          expect(data.merchantInformation.merchantName).to.be(
-                            ""
-                          );
                           expect(data.invoiceTotal).to.be.a("string");
-                          expect(data.invoiceTotal).to.be("");
                           expect(data.subtotal).to.be.a("string");
-                          expect(data.subtotal).to.be("");
                           expect(data._date).to.be.a("string");
-                          expect(data._date).to.be("");
                           expect(data.dueDate).to.be.a("string");
-                          expect(data.dueDate).to.be("");
                           expect(data.invoiceNumber).to.be.a("string");
-                          expect(data.invoiceNumber).to.be("");
                           expect(data.taxes).to.be.a("string");
-                          expect(data.taxes).to.be("");
-                          expect(data.locale).to.be.an('object');
+                          expect(data.locale).to.be.an("object");
                           expect(data.locale.currency).to.be.a("string");
-                          expect(data.locale.currency).to.be("");
                           expect(data.locale.language).to.be.a("string");
-                          expect(data.locale.language).to.be("");
                           {
                             let dataCtr = data.itemLines;
                             expect(dataCtr).to.be.an(Array);
                             expect(dataCtr).to.not.be.empty();
                             for (let p in dataCtr) {
                               let data = dataCtr[p];
-                              expect(data).to.be.an('object');
+                              expect(data).to.be.an("object");
                               expect(data.amount).to.be.a("string");
-                              expect(data.amount).to.be("");
                               expect(data.description).to.be.a("string");
-                              expect(data.description).to.be("");
                               expect(data.quantity).to.be.a("string");
-                              expect(data.quantity).to.be("");
                               expect(data.unitPrice).to.be.a("string");
-                              expect(data.unitPrice).to.be("");
                             }
                           }
                         }
@@ -331,13 +266,10 @@
       });
       describe("asyncOcrTablesLaunch", function () {
         it("should call asyncOcrTablesLaunch successfully", function (done) {
-          var language = "language_example";
-          var files = "/path/to/file.txt";
-          var providers = "providers_example";
+          var language = "en-US";
+          var files = fs.ReadStream(file_path);
+          var providers = "['amazon']";
           var opts = {};
-          opts.webhookReceiver = "webhookReceiver_example";
-          opts.usersWebhookParameters = "usersWebhookParameters_example";
-          opts.showOriginalResponses = false;
 
           instance.asyncOcrTablesLaunch(
             language,
@@ -350,27 +282,21 @@
                 return;
               }
               // TODO: update response assertions
-              expect(data).to.be.an('object');
+              expect(data).to.be.an("object");
               {
                 let dataCtr = data.result;
                 expect(dataCtr).to.be.an(Array);
                 expect(dataCtr).to.not.be.empty();
                 for (let p in dataCtr) {
                   let data = dataCtr[p];
-                  expect(data).to.be.an('object');
+                  expect(data).to.be.an("object");
                   expect(data.solutionName).to.be.a("string");
-                  expect(data.solutionName).to.be("");
                   expect(data.status).to.be.a("string");
-                  expect(data.status).to.be("");
                   expect(data.error).to.be.a("string");
-                  expect(data.error).to.be("");
                   expect(data.originalResult).to.be.a(Object);
-                  expect(data.originalResult).to.be();
-                  expect(data.result).to.be.an('object');
+                  expect(data.result).to.be.an("object");
                   expect(data.result.jobId).to.be.a("string");
-                  expect(data.result.jobId).to.be("");
                   expect(data.result.status).to.be.a("string");
-                  expect(data.result.status).to.be("");
                 }
               }
 
